@@ -17,6 +17,13 @@ default: &default
   password:
   socket: /tmp/mysql.sock
 
+production:
+  <<: *default
+  database: yourcopy_production
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
+
 development:
   <<: *default
   database: yourcopy_development
@@ -47,9 +54,4 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: yourcopy_production
-  username: root
-  password: <%= ENV['DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql/mysql.sock
+
