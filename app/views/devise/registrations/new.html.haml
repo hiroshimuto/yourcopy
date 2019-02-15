@@ -1,3 +1,18 @@
-<p>aaaa</p>
-
-<%= render "devise/shared/links" %>
+.content
+  %h1.title
+    KOTOBA
+    %p.subtitle
+      あなただけのキャッチコピー
+  %p.message
+    もし自分が広告のキャッチコピーをつくるとしたら。
+    %br/
+    あなたの、あなただけの
+    %br/
+    キャッチコピーを紡ぎ出してみましょう。
+  .signIn
+    .signIn_btn
+      = render 'devise/shared/links'
+  .guide
+    .guide_btn
+      = link_to home_path do
+        %p KOTOBAの使い方
