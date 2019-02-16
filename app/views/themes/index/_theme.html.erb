@@ -1,0 +1,11 @@
+<h2 id="hash"># <%= theme.hash_tag %></h2>
+<span class="organizer">
+  from
+  <span>投稿者</span>
+</span>
+
+<div class="scroll">
+  <div class="theme_container">
+    <%= render partial: "themes/index/topic", collection: theme.topics, as: "topic" %>
+  </div>
+</div>
