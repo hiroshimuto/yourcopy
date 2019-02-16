@@ -1,0 +1,83 @@
+@mixin default-button(){
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:3px solid #eee;
+  border-radius:5px;
+  padding:5px 0;
+  background:white;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), 0 2px 2px rgba(0, 0, 0, 0.19);
+  &:active{
+    box-shadow: inset 0 0 2px rgba(255,255,255,0.3);
+  }
+}
+
+.themes{
+  font-size: 3rem;
+  width:100vw;
+//   予定の画像を挿入
+  background-image: url("https://pics.prcm.jp/80cf609256e31/78520496/png/78520496.png");
+  h1{
+    text-align:center;
+  }
+  h2{
+    margin: 20px 0 10px;
+  box-shadow: 0 12px 10px -6px rgba(0,0,0,.3);
+  }
+  .scroll{
+    width:100vw;
+    overflow-x:scroll;
+    // スマホで滑らかにスクロールさせる
+    -webkit-overflow-scrolling: touch;
+  }
+  .organizer{
+    float:right;
+    margin:0 10px 0 0;
+  }
+}
+
+.theme{
+  &_container{
+    display:inline-block;
+    padding:0 0 10px 0;
+    white-space: nowrap;
+  }
+  &_content{
+    background:white;
+    display:inline-block;
+    width:400px;
+    border:3px solid #eee;
+    border-radius: 10px;
+    // @media screen and (max-width: 480px){
+    //   width: 400px;
+    // }
+    &:nth-of-type(n + 2) {
+      margin: 0 0 0 10px;
+    }
+    img{
+      display:block;
+      height:350px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin:10px auto 0 auto;
+    // @media screen and (max-width: 480px){
+    //   height: 350px;
+    // }
+    }
+    ul li{
+      margin:5px;
+      a{
+        display:block;
+        width:100%;
+        height:100%;
+        text-align:center;
+      }
+    }
+  }
+  &_list{
+    @include default-button();
+  }
+  &_creating{
+    @include default-button();
+  }
+}

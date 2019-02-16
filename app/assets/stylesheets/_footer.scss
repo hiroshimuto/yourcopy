@@ -1,0 +1,24 @@
+.foot-nav{
+  height:150px;
+  display:flex;
+  justify-content:space-around;
+  position:sticky;
+  position:-webkit-sticky;
+  transform: translate3d(0, 0, 0);
+  bottom:0;
+  background:white;
+  &_button{
+    width: 33%;
+    padding:10px;
+  }
+  &_content{
+    width: 100%;
+    text-align: center;
+  }
+  &_icon{
+    font-size: 60px;
+  }
+  &_text{
+    font-size: 2rem;
+  }
+}
