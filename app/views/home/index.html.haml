@@ -1,13 +1,40 @@
-%p
-  出題されたお題に対して、
-  %br/
-  広告のキャッチコピーをつくってみましょう。
 
 .swiper-container
   / Additional required wrapper
   .swiper-wrapper
     / Slides
-    .swiper-slide Slide 1
-    .swiper-slide Slide 2
-    .swiper-slide Slide 3
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            出題されたお題に対して、
+            %br/
+            広告のキャッチコピーをつくってみましょう。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            投稿ボタンを押すと、
+            %br/
+            つくった広告のキャッチコピーを
+            %br/
+            Twitterでシェアします。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            Twitter上の、他の人のキャッチコピーで
+            %br/
+            気に入ったものがあれば、いいね！やコメントを。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+
+        .signIn_btn
+
+
+
 

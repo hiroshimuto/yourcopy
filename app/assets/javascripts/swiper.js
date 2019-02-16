@@ -4,7 +4,6 @@ $(function(){
     slidesPerView: 2,
     spaceBetween: 10,
     centeredSlides : true,
-    pagination: '.swiper-pagination',
   })
 
 });

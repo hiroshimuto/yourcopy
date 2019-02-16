@@ -1,3 +1,55 @@
 .content{
   width: 100%;
+  text-align: center;
+  .title{
+    font-size: 28px;
+    margin: 200px 0 20px;
+    .subtitle{
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+  .message{
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 80px;
+  }
+  .signIn{
+    margin:0 auto 20px;
+    background-color: $SkyBlue;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    color: $White;
+    border-radius: 20px;
+    &_btn{
+      text-align: center;
+      a:visited{
+        color: $White;
+      }
+      a:active{
+        text-decoration: none;
+      }
+    }
+  }
+  .guide{
+    margin:0 auto 20px;
+    background-color: $White;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    color: $Black;
+    border-radius: 20px;
+
+    &_btn{
+      text-align: center;
+      a:visited{
+        color: $Black;
+
+      }
+      a:active{
+        text-decoration: none;
+      }
+    }
+  }
 }
