@@ -18,8 +18,6 @@
           %p
             投稿ボタンを押すと、
             %br/
-            つくった広告のキャッチコピーを
-            %br/
             Twitterでシェアします。
         .swiper-slide-content-imgbox
           = image_tag("sample.jpg", class:"guide-img")
@@ -27,13 +25,22 @@
       .swiper-slide-content
         .swiper-slide-content-text
           %p
-            Twitter上の、他の人のキャッチコピーで
+            他の人の投稿で気に入ったものがあれば、
             %br/
-            気に入ったものがあれば、いいね！やコメントを。
+            Twitterでいいねやコメントを。
         .swiper-slide-content-imgbox
           = image_tag("sample.jpg", class:"guide-img")
 
-        .signIn_btn
+        .signIn
+          .signIn_btn
+            = link_to user_twitter_omniauth_authorize_path do
+              %p Twitterで登録/ログイン
+
+  .swiper-pagination
+  .swiper-button-prev
+  .swiper-button-next
+
+
 
 
 
