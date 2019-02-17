@@ -1,0 +1,8 @@
+%h2#hash
+  \# #{theme.hash_tag}
+%span.organizer
+  from
+  %span 投稿者
+.scroll
+  .theme_container
+    = render partial: "themes/index/topic", collection: theme.topics, as: "topic"
