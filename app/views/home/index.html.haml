@@ -1,2 +1,41 @@
-%h1 デプロイテスト
-%p Find me in app/views/home/index.html.erb
+.swiper-container
+  / Additional required wrapper
+  .swiper-wrapper
+    / Slides
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            出題されたお題に対して、
+            %br/
+            広告のキャッチコピーをつくってみましょう。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            投稿ボタンを押すと、
+            %br/
+            Twitterでシェアします。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+    .swiper-slide
+      .swiper-slide-content
+        .swiper-slide-content-text
+          %p
+            他の人の投稿で気に入ったものがあれば、
+            %br/
+            Twitterでいいねやコメントを。
+        .swiper-slide-content-imgbox
+          = image_tag("sample.jpg", class:"guide-img")
+
+        .signIn
+          .signIn_btn
+            = link_to user_twitter_omniauth_authorize_path do
+              %p Twitterで登録/ログイン
+
+  .swiper-pagination
+  .swiper-button-prev
+  .swiper-button-next
+

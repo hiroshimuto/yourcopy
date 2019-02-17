@@ -1,5 +1,8 @@
 @import "./reset";
 @import "./variables";
+@import "./mixin";
+@import "modules/registration";
+@import "modules/home";
+@import "modules/footer";
+@import "modules/themes";
 
-@import "./footer";
-@import "./themes";
