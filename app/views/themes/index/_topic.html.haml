@@ -1,0 +1,8 @@
+.theme_content
+  = image_tag topic.image if topic.image.attached?
+  %img{:src => "http://umaru-ani.me/1st/special/images/twicon/umaru01.jpg"}/
+  %ul
+    %li.theme_list
+      = link_to "一覧"
+    %li.theme_creating
+      = link_to "作成"
