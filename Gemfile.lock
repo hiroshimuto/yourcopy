@@ -96,6 +96,8 @@ GEM
     dotenv-rails (2.6.0)
       dotenv (= 2.6.0)
       railties (>= 3.2, < 6.0)
+    erb2haml (0.1.5)
+      html2haml
     erubi (1.8.0)
     erubis (2.7.0)
     execjs (2.7.0)
@@ -288,6 +290,7 @@ DEPENDENCIES
   chromedriver-helper
   devise
   dotenv-rails
+  erb2haml
   haml-rails
   jbuilder (~> 2.5)
   jquery-rails (~> 4.3.3)

@@ -1,5 +1,4 @@
 .swiper-container{
-  width: 400px;
   margin-top: 80px;
   .swiper-wrapper{
     .swiper-slide{
@@ -16,7 +15,7 @@
           height: 400px;
           background-color: #fff;
           border-radius: 80px;
-          margin: 40px 20px 0;
+          margin: 20px 20px 0;
           .guide-img{
             width: 80%;
             height: 100%;
@@ -24,7 +23,7 @@
           }
         }
         .signIn{
-          margin:10px auto ;
+          margin:28px auto ;
           background-color: $SkyBlue;
           width: 60%;
           height: 40px;
@@ -45,7 +44,7 @@
     }
   }
   .swiper-pagination-bullets{
-    bottom: 70px !important;
+    bottom: 100px !important;
 
   }
   .swiper-button-prev{
