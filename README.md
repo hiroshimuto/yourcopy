@@ -20,6 +20,7 @@
 |------|----|-------|
 |text|string|null: false|
 |topic_id|references|foreign_key|
+|user_id|references|foreign_key|
 
 ### Association
 - belongs_to :topic
