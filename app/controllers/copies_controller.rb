@@ -1,5 +1,5 @@
 class CopiesController < ApplicationController
-  before_action :set_twitter_client
+  before_action :set_twitter_client,  only: [:create]
 
   def new
     @copy = Copy.new
