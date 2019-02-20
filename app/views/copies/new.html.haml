@@ -1,12 +1,14 @@
-%h1.theme
-  \#結婚
-  %p.subscribe
-    「結婚」って素敵だな。そう思えるキャッチコピー
-.image
-  = image_tag("sample.jpg", class:"guide-img")
-.form
-  = form_with model: @copy, html:{maxlength: 100} do |form|
-    = form.text_area :text, placeholder: "キャッチコピーを入力してください"
-    = form.submit "Twitterに投稿する"
+.container
+  %h1.theme
+    %p.title
+      \# 結婚
+    %p.subscribe
+      「結婚」って素敵だな。そう思えるキャッチコピー
+  .image
+    = image_tag("sample.jpg", class:"guide-img")
+  .form
+    = form_with model: @copy, html:{maxlength: 100} do |form|
+      = form.text_area :text, placeholder: "キャッチコピーを入力してください", class: "text_area", required: true
+      = form.submit "Twitterに投稿する", class: "btn"
 
 

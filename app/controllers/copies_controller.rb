@@ -7,6 +7,7 @@ class CopiesController < ApplicationController
 
   def create
     @copy = Copy.new(copy_params)
+    binding.pry
     if @copy.save
        @twitter.update("#{@copy.text}\r")
       redirect_to root_path
