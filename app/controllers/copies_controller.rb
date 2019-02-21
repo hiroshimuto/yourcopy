@@ -12,7 +12,7 @@ class CopiesController < ApplicationController
     if @copy.save
 
        @twitter.update("#{@copy.text}\r")
-      redirect_to root_path
+      render plain: "せいこう！！！！"
     else
       render plain: "しっぱい〜〜〜"
     end
@@ -21,7 +21,7 @@ class CopiesController < ApplicationController
   private
 
   def copy_params
-    params.require(:copy).permit(:text).merge(theme_id: params[:theme_id], topic_id: params[:topic_id])
+    params.require(:copy).permit(:text).merge(topic_id: params[:topic_id], user_id: current_user.id)
   end
 
   def set_twitter_client
