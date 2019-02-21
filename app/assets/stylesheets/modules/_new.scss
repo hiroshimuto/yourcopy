@@ -1,0 +1,60 @@
+.container{
+  width: 100%;
+  text-align: center;
+  .theme{
+    .title{
+      font-size: 22px;
+      margin: 50px auto 20px;
+
+    }
+    .subscribe{
+      font-size: 14px;
+      font-weight: lighter;
+      margin: 0px auto 20px;
+
+    }
+  }
+  .image{
+    margin: 10px 10px 30px;
+    .guide-img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .form{
+    display: inline-block;
+    width: 100%;
+    padding: 0px 10px 0px;
+    .text_area{
+      width: 100%;
+      height: 100px;
+      margin:0px auto 30px;
+    }
+    textarea{
+      outline: none;
+      padding: 10px;
+    }
+    textarea:focus {
+      // box-shadow: 0 0 7px #1abc9c;
+      border: 1px solid #1abc9c;
+    }
+    textarea::placeholder {
+      font-size: 12px;
+      line-height: 1.5;
+      position: relative;
+      top: 5px;
+      left: 5px;
+    }
+    .btn{
+      background-color: $SkyBlue;
+      color: $White;
+      width: 60%;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 20px;
+      border: none;
+
+    }
+
+  }
+}

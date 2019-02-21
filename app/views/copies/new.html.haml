@@ -1,0 +1,14 @@
+.container
+  %h1.theme
+    %p.title
+      #{@theme.hash_tag}
+    %p.subscribe
+      「結婚」って素敵だな。そう思えるキャッチコピー
+  .image
+    = image_tag("sample.jpg", class:"guide-img")
+  .form
+    = form_for [@theme, @topic ,@copy], html:{maxlength: 100} do |form|
+      = form.text_area :text, placeholder: "キャッチコピーを入力してください", class: "text_area", required: true
+      = form.submit "Twitterに投稿する", class: "btn"
+
+
