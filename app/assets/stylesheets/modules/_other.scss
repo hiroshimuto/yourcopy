@@ -1,0 +1,46 @@
+.other_container{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top: 140px;
+  font-size: 18px;
+  .agreement{
+    color: $Black;
+
+  }
+  .privacy{
+    margin:50px auto;
+
+  }
+  .contact{
+    margin:50px auto;
+    .text{
+      font-size: 10px;
+      margin:10px auto;
+    }
+
+  }
+
+  .signOut{
+    margin:60px auto;
+    background-color: $Gray;
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    color: $Black;
+    border-radius: 20px;
+    &_btn{
+      text-align: center;
+      a:visited{
+        color: $Black;
+      }
+      a:active{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+a{
+  color: $Black;
+}

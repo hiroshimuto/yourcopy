@@ -1,0 +1,15 @@
+.other_container
+  .agreement
+    = link_to '利用規約', '/'
+  .privacy
+    = link_to 'プライバシーポリシー', '/'
+  .contact
+    = link_to 'お問い合わせ', '/'
+    %p.text
+      Twitterアカウントへ遷移致します。
+      %br DMにてご連絡ください。
+  .signOut
+    .signOut_btn
+      = link_to 'ログアウト', destroy_user_session_path, method: :delete
+
+/ = render :file => "./layouts/_footer"

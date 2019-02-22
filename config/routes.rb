@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   end
 
   get '/home' => 'home#index'
+  get '/other' => 'home#other'
 
   resources :themes, only: [:index] do
     resources :topics, only: [:show] do
