@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/home' => 'home#index'
 
   resources :themes, only: [:index] do
-    resources :topics do
+    resources :topics, only: [:show] do
       resources :copies, only: [:new, :create]
     end
   end
