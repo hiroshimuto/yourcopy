@@ -1,7 +1,7 @@
 .show_container
   %h1.theme
     %p.title
-      \#結婚っていいな
+      #{@theme.hash_tag}
     %p.subscribe
       「結婚」って素敵だな。そう思えるキャッチコピー
   .image
@@ -9,36 +9,13 @@
 
   .posted_box
     %ul.posted_lists
-      %li.posted_list
-        「結婚しなくても幸せになれるこの時代に、私は、あなたと結婚したいのです」
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        結婚するとか、しないとか、それよりもただ、愛してる。
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        くすり指がドキドキした。
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        『ばいばい』が『ただいま』になる。
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        朝起きる、君がいる
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        出会いは突然、きっかけは偶然、これからは必然
-        %p.posted_user
-          created by user_name
-      %li.posted_list
-        『ばいばい』が『ただいま』になる。
-        %p.posted_user
-          created by user_name
+      - @copies.each do |copy|
+        %li.posted_list
+          = copy.text
+          %p.posted_user
+            created by #{copy.user.username}
   .post
     .post_btn
-      = link_to "/" do
+      = link_to "/themes/#{@theme.id}/topics/#{@topic.id}/copies/new" do
         %p 作成
 
